@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/YAADU/",
+  base: "/ADB/",
   assetsInclude: ["**/*.lottie"],
   build: {
     target: "esnext",

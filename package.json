@@ -25,7 +25,7 @@
     "typescript": "^5.4.5",
     "vite": "^5.4.0"
   },
-  "name": "yaadu",
+  "name": "adb",
   "type": "module",
   "scripts": {
     "dev": "vite",
