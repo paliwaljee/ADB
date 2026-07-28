@@ -17,45 +17,27 @@
 ### Connect
 Plug in your Android device with USB debugging enabled, click connect, and the browser's USB picker handles the rest. YAADU authenticates using standard RSA-2048 ADB key exchange — no `adb` binary required on your machine.
 
-![Connect screen](assets/connect.png)
+![Connect screen](assets/0.png)
 
 ### Device Telemetry
 View detailed device information: brand, model, OS version, battery stats, screen resolution, RAM, storage, WiFi details, and active sensors. Memory usage is visualized with a progress ring.
 
-![Telemetry panel](assets/telemetry.png)
+![Telemetry panel](assets/1.png)
 
 ### App Management
 Browse user-installed apps with live name resolution. Force stop, clear data, uninstall, or disable/enable apps directly from the browser. Drag-and-drop APK files to sideload them onto the device.
 
-![Apps panel](assets/apps.png)
+![Apps panel](assets/2.png)
 
 ### Media Backup
 Scan the device camera folder and download individual files or create a ZIP archive of selected media. Supports cancellation mid-backup.
 
-![Media backup](assets/mediabackup.png)
+![Media backup](assets/3.png)
 
 ### System Tweaks
 Adjust animation speed, toggle night mode, and change display density (DPI) through `settings` and `wm` shell commands.
 
-![Tweaks panel](assets/tweaklogandmirror.png)
-
----
-
-## Quick Start
-
-```bash
-# Install dependencies (Node 18+)
-npm install
-
-# Start dev server (http://localhost:5173)
-npm run dev
-
-# Production build
-npm run build
-npm run preview
-```
-
----
+![Tweaks panel](assets/5.png)
 
 ## Prerequisites
 
@@ -75,16 +57,4 @@ npm run preview
 - **Repeated authorization prompts** — Open DevTools console and run `localStorage.removeItem("yaadu:adb-private-key")`, then reconnect.
 - **Permission denied errors** — YAADU runs as the `shell` user; some operations (e.g. uninstalling system apps) require root.
 
----
-
-## Tech Stack
-
-| Package | Purpose |
-|---|---|
-| React 19 | UI framework |
-| Vite | Build tool |
-| TypeScript | Type safety |
-| @yume-chan/adb 0.0.19 | ADB daemon protocol over WebUSB |
-| @material/web 2.4.1 | Material 3 web components |
-| @material/material-color-utilities | Programmatic M3 theme generation |
-| jszip | Media backup archive creation |
+This is Fetched Repo from YAADO
