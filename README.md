@@ -2,7 +2,7 @@
   <img src="assets/hero.png" alt="YAADU logo" width="320">
 </p>
 
-<h1 align="center">YAADU — Yet Another Android Debug Utility</h1>
+<h1 align="center">ADB — Yet Another Android Debug Utility</h1>
 
 <p align="center">
   A fully client-side Android dashboard that communicates with a physical device over USB via the <strong>WebUSB API</strong>.<br>
